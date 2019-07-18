@@ -15,29 +15,30 @@
         <div class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle"
             style="background-image: url(img/challenge.jpg);">
             <div class="uk-position-top">
-                <nav class="uk-navbar uk-background-muted">
+                <!-- Menu Desktop -->
+                <nav class="uk-navbar uk-background-muted uk-visible@l">
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active" uk-navbar-item>
+                            <li class="uk-active" >
                                 <a href="#">
                                     Pour combien ?
                                     <span class="uk-icon uk-margin-small-left" uk-icon="icon: chevron-right"></span>
                                 </a>
                             </li>
-                            <li uk-navbar-item>
+                            <li>
                                 <a href="#">
                                     <span class="uk-icon uk-margin-small-right" uk-icon="icon: commenting"></span>
                                     Les règles
                                 </a>
                             </li>
                             <li>
-                                <a href="#" uk-navbar-item>
+                                <a href="#">
                                     <span class="uk-icon uk-margin-small-right" uk-icon="icon: history"></span>
                                     Le back
                                 </a>
                             </li>
                             <li>
-                                <a href="#" uk-navbar-item>
+                                <a href="#">
                                     <span class="uk-icon uk-margin-small-right" uk-icon="icon: heart"></span>
                                     Thanks
                                 </a>
@@ -45,8 +46,28 @@
                         </ul>
                     </div>
                 </nav>
+                <!-- Menu Mobile -->
+                <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m" id="menu" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-text-uppercase">Pour combien ?</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="uk-offcanvas-content">
+                    <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                        <div class="uk-offcanvas-bar uk-text-uppercase">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="#">Les règles</a></li>
+                                <li><a href="#">Le back</a></li>
+                                <li><a href="#">Thanks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            Photo by Igor Rodrigues on Unsplash
+            Photo by Michael Schmid on Unsplash
         </div>
     </div>
     <!-- UIkit JS -->
