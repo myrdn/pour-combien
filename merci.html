@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pour combien ? | Le back</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="uk-position-relative">
+        <div class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle"
+            style="background-image: url(img/challenge.jpg);">
+            <div class="uk-position-top">
+                <!-- Menu Desktop -->
+                <nav class="uk-navbar uk-background-muted uk-visible@l">
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active">
+                                <a href="index.html">
+                                    Pour combien ?
+                                    <span class="uk-icon uk-margin-small-left" uk-icon="icon: chevron-right"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bases.html">
+                                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: commenting"></span>
+                                    Les bases
+                                </a>
+                            </li>
+                            <li class="uk-active">
+                                <a href="back.html">
+                                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: history"></span>
+                                    Le back
+                                </a>
+                            </li>
+                            <li>
+                                <a href="merci.html">
+                                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: heart"></span>
+                                    Thanks
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Menu Mobile -->
+                <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m" id="menu" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                            <span uk-navbar-toggle-icon></span> <span
+                                class="uk-margin-small-left uk-text-uppercase">Pour combien ?</span>
+                        </a>
+                    </div>
+                </nav>
+                <div class="uk-offcanvas-content">
+                    <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                        <div class="uk-offcanvas-bar uk-text-uppercase">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="bases.html">Les bases</a></li>
+                                <li><a href="back.html">Le back</a></li>
+                                <li><a href="merci.html">Thanks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="uk-section uk-margin-large-top">
+                <div class="uk-container-xsmall">
+                    <article class="uk-article uk-background-muted uk-padding-large uk-animation-slide-top-medium">
+                        <h1 class="uk-article-title">Les remerciements </h1>
+                        <ul class="uk-list uk-list-striped">
+                            <li>Ma coloc Éléonore <span uk-icon="heart"></span> qui m'a fait découvrir ce jeu auquel nous jouons presque
+                                quotidiennement</li>
+                            <li>Alex et Juliette avec qui j'ai pu gouter mes premières flaques</li>
+                            <li>Astrid pour les règles du jeu</li>
+                            <li><a
+                                    href="https://unsplash.com/photos/O9eE9fT3P9c?modal=%7B%22tag%22%3A%22CreditBadge%22%2C%22value%22%3A%7B%22userId%22%3A%22JmNPxb_AmlQ%22%7D%7D">Michael
+                                    Schmid</a> pour l'arrière plan</li>
+                            <li>Les illustrations surréalistes utilisées sur la page <a href="bases.html">des bases</a>
+                                proviennent du site <a href="https://absurd.design">absurd.design</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <!-- Photo by Michael Schmid on Unsplash -->
+        </div>
+    </div>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
